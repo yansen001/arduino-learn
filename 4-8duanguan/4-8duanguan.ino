@@ -11,8 +11,6 @@ const int dig2 = 11;
 const int dig3 = 12;
 const int dig4 = 13; 
 
-int j;
-
 
 int nunTable[10][8] = {
     /*
@@ -201,29 +199,98 @@ void d4(void) {
     digitalWrite(dig4,digTable[4][3]);
 }
 
-void setup() {
-    for ( int j = 2; j <= 13; j++)
+void displaynum(unsigned char d_x, unsigned char display_x ) {
+    setdx(d_x);
+    setdisplayx(display_x);
+    delay(1);
+    clear();
+}
+
+void setdx(unsigned char n) {
+    switch (n)
     {
-        pinMode(j,OUTPUT);
+    case 1:
+        d1();
+        break;
+    
+    case 2:
+        d2();
+        break;
+
+    case 3:
+        d3();
+        break;
+
+    case 4:
+        d4();
+        break;
+
+    default:
+        d0();
+        break;
+    }
+}
+
+void setdisplayx(unsigned char n) {
+    switch (n)
+    {
+    case 0:
+        display0();
+        break;
+    
+    case 1:
+        display1();
+        break;
+
+    case 2:
+        display2();
+        break;
+
+    case 3:
+        display3();
+        break;
+
+    case 4:
+        display4();
+        break;
+
+    case 5:
+        display5();
+        break;
+
+    case 6:
+        display6();
+        break;
+
+    case 7:
+        display7();
+        break;
+
+    case 8:
+        display8();
+        case;
+
+    case 9:
+        display9();
+        case
+
+    default:
+        clear();
+        break;
+    }
+}
+
+void setup() {
+    for ( int i = 2; i <= 13; i++)
+    {
+        pinMode(i,OUTPUT);
     }
 }
 
 void loop() {
-    d1();
-    display1();
-    clear();
-
-    d2();
-    display2();
-    clear();
-
-    d3();
-    display3();
-    clear();
-
-    d4();
-    display4();
-    clear();
-
+    displaynum(1,9);
+    displaynum(2,8);
+    displaynum(3,7);
+    displaynum(4,6);
 }
 
