@@ -210,11 +210,11 @@ void setup() {
 
 void loop() {
     d1();
-    display2();
+    display1();
     clear();
 
     d2();
-    display3();
+    display2();
     clear();
 
     d3();
@@ -222,7 +222,7 @@ void loop() {
     clear();
 
     d4();
-    display3();
+    display4();
     clear();
 
 }
