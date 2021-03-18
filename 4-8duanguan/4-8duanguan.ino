@@ -27,7 +27,7 @@ int nunTable[10][8] = {
     {1,0,1,1,1,1,1,0},      //6
     {1,1,1,0,0,0,0,0},      //7
     {1,1,1,1,1,1,1,0},      //8
-    {1,1,1,0,0,1,1,0},      //9
+    {1,1,1,1,0,1,1,0},      //9
 };
 
 int digTable[5][4] = {
@@ -268,11 +268,11 @@ void setdisplayx(unsigned char n) {
 
     case 8:
         display8();
-        case;
+        break;
 
     case 9:
         display9();
-        case
+        break;
 
     default:
         clear();
