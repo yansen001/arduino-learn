@@ -288,9 +288,15 @@ void setup() {
 }
 
 void loop() {
-    displaynum(1,9);
-    displaynum(2,8);
-    displaynum(3,7);
-    displaynum(4,6);
+    displaynum(1,0);
+    
+    displaynum(2,0);
+    
+    displaynum(3,0);
+    
+    displaynum(4,0);
+
+
+    
 }
 
