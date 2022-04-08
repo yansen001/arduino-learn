@@ -4,8 +4,8 @@
 单位：L/H
 传感器量程：1~25 L/min
 流量脉冲特性 Hz=(5.0*Q) ±5%  Q--流量L/min
-流程，累计1s内脉冲数量C1，C1/1=频率Result1 带入公式得出流量Q Q*60=Result2 L/H
-暂时shi'yon
+流程：累计1s内脉冲数量C1，C1/1=频率Result1 带入公式得出流量Q Q*60=Result2 L/H
+暂时使用串口回传数据
 */
 
 const long sample_time = 1000 ;//采样时间1000ms
