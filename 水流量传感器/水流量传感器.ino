@@ -10,7 +10,7 @@
 
 const long sample_time = 1000 ;//采样时间1000ms
 unsigned long time;
-float c1 = 0; //计数器c1初始化
+volatile float c1 = 0; //计数器c1初始化 vol关键字表示编译器不优化，从RAM中读取
 float r1 = 0;
 float r2 = 0;
 
