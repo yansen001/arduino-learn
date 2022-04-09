@@ -1,12 +1,12 @@
 int ledpin = 13;
-int ir_sensor = 7;
-
+int ir_sensor_statue =0;
 void setup() {
   pinMode(ledpin, OUTPUT);
-  pinMode(ir_sensor, INPUT);
   Serial.begin(9600);
 }
 
 void loop() {
-  while()
+  ir_sensor_statue = analogRead(A5);
+  Serial.println(ir_sensor_statue);
+  delay(100);
 }
